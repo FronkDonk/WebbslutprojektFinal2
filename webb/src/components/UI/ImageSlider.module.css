@@ -1,0 +1,131 @@
+.ImageSliderContainer {
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageAndIcons {
+  width: 100%;
+  height: 100%;
+  max-height: 480px;
+  max-width: 1080px;
+  position: relative;
+}
+
+.slider.inactive {
+  opacity: 0.5;
+}
+
+.slider {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition-duration: 700ms;
+  overflow-x: hidden;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  margin-top: 1.5rem;
+}
+
+.icon {
+  width: 11rem;
+  fill: white;
+}
+
+.inactiveIcon {
+  filter: grayscale(100%);
+}
+
+.logo {
+  width: 10rem;
+  margin-left: -10px;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.bar {
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.imageTextContainer {
+  margin-left: 30px;
+  padding-top: 25px;
+  color: white;
+  width: 1080px;
+  height: 480px;
+}
+
+.imageText {
+  position: absolute;
+  max-height: 480px;
+  max-width: 1080px;
+}
+
+.logoAndspan {
+  display: flex;
+  justify-content: space-between;
+}
+.logoAndspan > span {
+  position: absolute;
+  right: -850px;
+}
+
+.logoAndspan > span img {
+  width: 40px;
+}
+
+.imageText > h4 {
+  font-size: clamp(0.5rem, 3vw, 2rem);
+
+  position: absolute;
+  bottom: -350px;
+  white-space: nowrap;
+}
+
+.imageTextContainer > :nth-child(2) {
+  right: -150px;
+}
+.imageTextContainer > :nth-child(3) {
+  right: -1230px;
+}
+
+.imageTextContainer > :nth-child(4) {
+  right: -2310px;
+}
+
+.imageGradient1 {
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .ImageSliderContainer {
+    padding: 15px;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .imageText {
+    white-space: normal;
+  }
+}

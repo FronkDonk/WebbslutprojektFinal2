@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  height: 100svh;
+  justify-content: center;
+  position: relative;
+}
+
+.wrapper h1 {
+  font-size: clamp(1rem, 4vw, 5rem);
+}
+
+.wrapper a {
+  text-decoration: none;
+  color: #5469d4;
+  margin-top: 1rem;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+}
+
+.text {
+  margin-top: 30px;
+  font-size: clamp(0.5rem, 4vw, 2rem);
+}
+
+.signOutTextContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

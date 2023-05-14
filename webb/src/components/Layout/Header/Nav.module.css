@@ -1,0 +1,110 @@
+@import url("https://use.typekit.net/nrs8hjb.css");
+
+.nav {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 300;
+}
+
+.contact-nav {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #12182f;
+  padding: 0.5rem;
+}
+
+.nav p:hover {
+  color: rgb(179, 156, 156);
+  transition: 0.3s;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: clamp(0px, 15svw, 18rem);
+  margin-right: clamp(0px, 15svw, 18rem);
+  padding: 0.9375rem;
+}
+
+.navbar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.6875rem;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.link-contact {
+  color: #12182f;
+  text-decoration: none;
+}
+
+.link-contact:hover {
+  color: rgb(179, 156, 156);
+  transition: 0.3s;
+}
+
+.link:hover {
+  color: rgb(179, 156, 156);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.navbar-signup-contact a {
+  background-color: #831da0;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.4375rem 3.125rem;
+  border-radius: 1.875rem;
+}
+
+.navbar-signup-contact a:hover {
+  background-color: #12182f;
+  transition: 0.3s;
+}
+
+.dropdown svg:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .nav,
+  .contact-nav {
+    align-items: center;
+    padding: 0.4rem;
+    padding-left: clamp(0px, 8vw, 300px);
+    padding-right: clamp(0px, 8vw, 300px);
+  }
+
+  .contact-nav {
+    padding-left: clamp(0px, 8vw, 300px);
+    padding-right: clamp(0px, 8vw, 300px);
+  }
+
+  .dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-container {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .dropdown {
+    display: none;
+  }
+}

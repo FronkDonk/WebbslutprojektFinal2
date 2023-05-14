@@ -1,0 +1,8 @@
+.contact-form {
+  padding: clamp(2rem, 4vw, 6rem);
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: clamp(340px, 45vw, 600px);
+  border-radius: 13px;
+  position: relative;
+}

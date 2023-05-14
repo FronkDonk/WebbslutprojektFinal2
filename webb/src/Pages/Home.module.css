@@ -1,0 +1,7 @@
+.homeContainer {
+  overflow: hidden;
+}
+.headerContainer {
+  overflow: hidden;
+  overflow-x: hidden;
+}

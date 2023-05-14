@@ -1,0 +1,22 @@
+.link {
+  color: #12182f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link-contact {
+  color: #12182f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link-contact:hover {
+  color: rgb(179, 156, 156);
+  transition: 0.3s;
+}
+
+.link:hover {
+  color: rgb(179, 156, 156);
+  transition: 0.3s;
+  cursor: pointer;
+}
